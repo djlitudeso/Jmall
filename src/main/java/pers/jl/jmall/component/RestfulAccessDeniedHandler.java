@@ -12,8 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @ClassName: RestfulAccessDeniedHandler.java
- * @Description: 当访问接口没有权限时，自定义的返回结果
+ * 当用户没有访问权限时，用于返回JSON格式的处理结果
  * @author: JL Du
  * @date: 2022/2/26 22:33
  * @version: 1.0.0

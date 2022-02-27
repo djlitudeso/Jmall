@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @ClassName: AdminUserDetails.java
  * @Description: SpringSecurity需要的用户详情
  * @author: JL Du
  * @date: 2022/2/26 22:43
