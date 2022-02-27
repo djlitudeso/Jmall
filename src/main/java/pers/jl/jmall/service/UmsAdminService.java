@@ -6,8 +6,7 @@ import pers.jl.jmall.mbg.entity.UmsPermission;
 import java.util.List;
 
 /**
- * @ClassName: UmsAdminService.java
- * @Description: 后台管理员Service
+ * TODO：SpringSecurity定义的核心接口，用于根据用户名获取用户信息
  * @author: JL Du
  * @date: 2022/2/26 23:03
  * @version: 1.0.0
