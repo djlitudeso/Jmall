@@ -13,8 +13,7 @@ import java.io.IOException;
 
 
 /**
- * @ClassName: RestAuthenticationEntryPoint.java
- * @Description: 当未登录或者token失效访问接口时，自定义的返回结果
+ * TODO：当未登录或token失效时，返回JSON格式的结果
  * @author: JL Du
  * @date: 2022/2/26 22:27
  * @version: 1.0.0
@@ -23,7 +22,9 @@ import java.io.IOException;
 @Component
 public class RestAuthenticationEntryPoint implements AuthenticationEntryPoint {
     @Override
-    public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException, ServletException {
+    public void commence(HttpServletRequest request,
+                         HttpServletResponse response,
+                         AuthenticationException authException) throws IOException, ServletException {
         response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json");
         response.getWriter().println(JSONUtil.parse(CommonResult.unauthorized(authException.getMessage())));
