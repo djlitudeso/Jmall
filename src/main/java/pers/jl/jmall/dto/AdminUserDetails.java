@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @Description: SpringSecurity需要的用户详情
+ * TODO：SpringSecurity定义的核心接口，用于根据用户名获取用户信息
  * @author: JL Du
  * @date: 2022/2/26 22:43
  * @version: 1.0.0
