@@ -6,7 +6,7 @@ import pers.jl.jmall.mbg.entity.PmsBrand;
 import pers.jl.jmall.mbg.entity.PmsBrandExample;
 
 public interface PmsBrandMapper {
-    int countByExample(PmsBrandExample example);
+    long countByExample(PmsBrandExample example);
 
     int deleteByExample(PmsBrandExample example);
 

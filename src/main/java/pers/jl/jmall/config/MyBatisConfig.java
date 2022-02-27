@@ -11,6 +11,6 @@ import org.springframework.context.annotation.Configuration;
  * @version: 1.0.0
  */
 @Configuration
-@MapperScan("pers.jl.jmall.mbg.mapper")
+@MapperScan({"pers.jl.jmall.mbg.mapper","pers.jl.jmall.mapper"})
 public class MyBatisConfig {
 }

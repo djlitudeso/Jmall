@@ -1,12 +1,13 @@
 package pers.jl.jmall.mbg.mapper;
 
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
 import pers.jl.jmall.mbg.entity.UmsAdmin;
 import pers.jl.jmall.mbg.entity.UmsAdminExample;
 
+import java.util.List;
+
 public interface UmsAdminMapper {
-    int countByExample(UmsAdminExample example);
+    long countByExample(UmsAdminExample example);
 
     int deleteByExample(UmsAdminExample example);
 

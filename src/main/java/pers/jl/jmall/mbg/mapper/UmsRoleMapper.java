@@ -6,7 +6,7 @@ import pers.jl.jmall.mbg.entity.UmsRole;
 import pers.jl.jmall.mbg.entity.UmsRoleExample;
 
 public interface UmsRoleMapper {
-    int countByExample(UmsRoleExample example);
+    long countByExample(UmsRoleExample example);
 
     int deleteByExample(UmsRoleExample example);
 

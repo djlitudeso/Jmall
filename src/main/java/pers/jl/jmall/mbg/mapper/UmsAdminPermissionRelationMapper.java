@@ -6,7 +6,7 @@ import pers.jl.jmall.mbg.entity.UmsAdminPermissionRelation;
 import pers.jl.jmall.mbg.entity.UmsAdminPermissionRelationExample;
 
 public interface UmsAdminPermissionRelationMapper {
-    int countByExample(UmsAdminPermissionRelationExample example);
+    long countByExample(UmsAdminPermissionRelationExample example);
 
     int deleteByExample(UmsAdminPermissionRelationExample example);
 

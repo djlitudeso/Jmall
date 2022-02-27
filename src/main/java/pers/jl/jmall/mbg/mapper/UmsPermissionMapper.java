@@ -6,7 +6,7 @@ import pers.jl.jmall.mbg.entity.UmsPermission;
 import pers.jl.jmall.mbg.entity.UmsPermissionExample;
 
 public interface UmsPermissionMapper {
-    int countByExample(UmsPermissionExample example);
+    long countByExample(UmsPermissionExample example);
 
     int deleteByExample(UmsPermissionExample example);
 
