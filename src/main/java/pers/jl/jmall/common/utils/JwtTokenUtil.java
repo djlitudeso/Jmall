@@ -14,15 +14,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @ClassName: JwtTokenUtil.java
- *  JwtToken生成的工具类
- *  JWT token的格式：header.payload.signature
- *  header的格式（算法、token的类型）：
- *  {"alg": "HS512","typ": "JWT"}
- *  (payload的格式（用户名、创建时间、生成时间）：
- *  {"sub":"wang","created":1489079981393,"exp":1489684781}
- *  signature的生成算法：
- *  HMACSHA512(base64UrlEncode(header) + "." +base64UrlEncode(payload),secret)
+ * TODO：生成JwtToken
+ * JWT的格式：header.payload.signature
+ * https://jwt.io/
  * @author: JL Du
  * @date: 2022/2/26 22:01
  * @version: 1.0.0
@@ -30,6 +24,7 @@ import java.util.Map;
 
 @Component
 public class JwtTokenUtil {
+
     private static final Logger LOGGER = LoggerFactory.getLogger(JwtTokenUtil.class);
     private static final String CLAIM_KEY_USERNAME = "sub";
     private static final String CLAIM_KEY_CREATED = "created";
@@ -39,7 +34,7 @@ public class JwtTokenUtil {
     private Long expiration;
 
     /**
-     * 根据负责生成JWT的token
+     * 根据登录用户信息生成token
      */
     private String generateToken(Map<String, Object> claims) {
         return Jwts.builder()
